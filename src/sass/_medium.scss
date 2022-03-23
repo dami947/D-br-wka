@@ -1,0 +1,313 @@
+@media(min-width:768px) {
+
+    .section-title {
+
+        &::before {
+            left: 0;
+            transform: translateX(0);
+        }
+    }
+
+    .title {
+        font-size: 1.7rem;
+    }
+
+    .header-img {
+        &__text {
+
+            .text-top {
+                font-size: 2.6rem;
+            }
+
+            .text-bottom {
+                font-size: 6rem;
+            }
+
+            .btn-check-deadlines {
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+    .about-the-room {
+
+        .box {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .box-img {
+                width: 50%;
+            }
+        }
+
+        .box-text {
+            padding-left: 3em;
+
+            .section-title {
+                text-align: left;
+            }
+        }
+
+        .box-two,
+        .box-four {
+            flex-direction: row-reverse;
+
+            .box-text {
+                padding-left: 0;
+                padding-right: 3em;
+            }
+        }
+
+        .box-six {
+            flex-direction: column;
+            align-items: flex-end;
+            background: none;
+
+            .box-text {
+                width: 80%;
+            }
+
+            .box-img {
+                width: 100%;
+            }
+        }
+    }
+
+    .packages {
+
+        .our-strengths {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-wrap: wrap;
+
+            .box {
+                width: 50%;
+            }
+
+            .one {
+                width: 100%;
+            }
+
+            .section-title {
+                text-align: left;
+
+                &::before {
+                    width: 40%;
+                }
+            }
+        }
+
+        .box-img {
+            width: 90%;
+            object-fit: cover;
+        }
+
+        .box-li {
+            font-size: 1.5rem;
+        }
+
+        .our-packages {
+            .section-title {
+                &::before {
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+            }
+
+            .cards {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+                width: 100%;
+            }
+
+            .card {
+                width: 45%;
+                margin: 5em 1.5em;
+            }
+        }
+
+        .gift {
+            flex-direction: row;
+            justify-content: flex-start;
+            width: 100%;
+
+            .img-gift {
+                width: 50%;
+            }
+
+            .gift-text {
+                margin-left: 5em;
+            }
+
+            .gift-li {
+                font-size: 1.5rem;
+            }
+
+        }
+    }
+
+    .menu {
+        .section-title {
+            &::before {
+                width: 40%;
+
+            }
+        }
+    }
+
+    .opinions {
+
+        .section-title {
+            &::before {
+                width: 40%;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+
+        .carousel {
+            margin: 10em auto;
+        }
+
+        .carousel-item {
+
+            i {
+                font-size: 2.6rem;
+            }
+
+            .text {
+                font-size: 1.5rem;
+            }
+
+            .name {
+                font-size: 1.7rem;
+            }
+
+        }
+
+        .btn-next,
+        .btn-previous {
+            font-size: 3.4rem;
+        }
+    }
+
+    .reservation {
+
+        .text-top {
+            font-size: 2.8rem;
+        }
+
+        .text-bottom {
+            font-size: 6.6rem;
+        }
+
+        .btn-check-deadlines {
+            font-size: 1.5rem;
+        }
+    }
+
+    .faq {
+        .section-title {
+
+            &::before {
+                width: 40%;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+
+        .accordion {
+            padding: 6em 2em;
+        }
+
+        .accordion-box {
+
+            .accordion-btn {
+                font-size: 1.8rem;
+            }
+
+            .accordion-body {
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+    .gallery {
+
+        .box-gallery {
+
+            .gallery-img {
+                width: 33.333%;
+            }
+        }
+    }
+
+
+    .contact {
+        .section-title {
+            &::before {
+                width: 40%;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+
+        .box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box-item {
+            padding: 7em;
+
+        }
+
+        .data {
+            font-size: 1.5rem;
+
+            .data-text-top {
+                .name {
+                    font-size: 2rem;
+                }
+
+            }
+
+        }
+    }
+
+    .header-form {
+        background-image: url(../../dist/img/header-form.jpg);
+
+
+        .wrapper {
+
+            .form-name-email {
+                flex-direction: row;
+                justify-content: space-between;
+                width: 100%;
+                padding: 1em 0;
+
+
+                input {
+                    padding: 1em;
+                    width: 48%;
+                }
+            }
+
+            .check {
+                padding-top: 2em;
+
+                label {
+                    padding-left: 1.5em;
+                }
+            }
+        }
+    }
+
+
+}

@@ -1,0 +1,313 @@
+@media(min-width:992px) {
+
+    html {
+        scroll-padding-top: 103px;
+    }
+
+    .section {
+        padding: 8em 0;
+    }
+
+
+    .section-title {
+        font-size: 3rem;
+    }
+
+
+    .title {
+        padding: 1em 0;
+        font-size: 1.8rem;
+    }
+
+
+    .nav-mobile {
+        display: none;
+    }
+
+    .nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        z-index: 10;
+    }
+
+    .nav-desktop {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 0 auto;
+        max-width: 1600px;
+        font-family: 'Lora', serif;
+
+        &__menu {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .menu-link {
+                position: relative;
+                padding: 0 .7em;
+                font-size: 1.4rem;
+                color: #000;
+                text-decoration: none;
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    bottom: -5px;
+                    left: 0;
+                    height: 3px;
+                    width: 100%;
+                    background-color: $mainColor;
+                    transform: scaleX(0);
+                    transform-origin: right;
+                    transition: transform .3s linear;
+                }
+
+                &:hover::after {
+                    transform: scaleX(1);
+                    transform-origin: left;
+                }
+
+                &__logo {
+                    padding-right: 1em;
+
+                    img {
+                        width: 100px;
+                        object-fit: cover;
+                    }
+                }
+            }
+        }
+
+        &__box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-right: 1em;
+
+            .number {
+                font-size: 1.5rem;
+                font-weight: bold;
+                text-decoration: none;
+                color: #000;
+                transition: color .2s linear;
+
+                &:hover {
+                    color: $mainColor;
+                }
+            }
+
+            .text {
+                font-size: 1.2rem;
+                text-align: right;
+                color: $mainColor;
+            }
+
+            i {
+                padding-left: .5em;
+                font-size: 2rem;
+                color: $mainColor;
+            }
+        }
+    }
+
+
+    .header-img {
+        background-image: url(../img/header-hq.jpg);
+
+        .wrapper {
+            align-items: flex-start;
+            width: 100%;
+        }
+
+        &__text {
+            text-align: left;
+
+            .text-top {
+                font-size: 2.8rem;
+            }
+
+            .text-bottom {
+                font-size: 6.6rem;
+            }
+
+        }
+
+        &__social-icon {
+            bottom: 75%;
+
+            .box {
+                a {
+                    width: 50px;
+                    height: 50px;
+                    margin: .5em;
+                    font-size: 2.6rem;
+                }
+            }
+        }
+
+        .header-bg {
+            background-color: rgba(255, 255, 255, .2);
+        }
+    }
+
+
+    .about-the-room {
+
+        .container {
+            padding: 4em 2em;
+        }
+
+        .box {
+            padding: 5em 0;
+        }
+    }
+
+
+    .packages {
+
+        .our-packages {
+
+            .cards {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-wrap: wrap;
+            }
+
+            .card {
+                width: 30%;
+            }
+        }
+
+        .gift {
+
+            .gift-text {
+                margin-left: 10em;
+            }
+
+            .gift-li {
+                font-size: 1.6rem;
+            }
+
+        }
+    }
+
+    .opinions {
+
+        .carousel-item {
+
+            i {
+                font-size: 3rem;
+            }
+
+            .text {
+                font-size: 1.6rem;
+            }
+
+            .name {
+                font-size: 1.8rem;
+            }
+
+        }
+
+        .btn-next,
+        .btn-previous {
+            font-size: 3.8rem;
+        }
+    }
+
+    .reservation {
+        padding: 15em 0;
+
+        .text-top {
+            font-size: 3rem;
+        }
+
+        .text-bottom {
+            font-size: 8rem;
+        }
+
+        .btn-check-deadlines {
+            font-size: 1.6rem;
+        }
+    }
+
+
+    .faq {
+
+        .accordion-box {
+
+            .accordion-btn {
+                font-size: 1.9rem;
+            }
+
+            .accordion-body {
+                font-size: 1.6rem;
+            }
+        }
+    }
+
+    .gallery {
+
+        .box-gallery {
+
+            .gallery-img {
+                width: 25%;
+            }
+        }
+    }
+
+
+    .contact {
+
+        .box-item {
+            .name {
+                font-size: 2.2rem;
+            }
+
+            .position {
+                font-size: 1.5rem;
+            }
+
+            .email {
+                font-size: 1.5rem;
+
+            }
+        }
+
+        .data-map {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0em 2em;
+            width: 100%;
+        }
+
+        .data {
+            align-items: flex-start;
+            width: 40%;
+            font-size: 1.6rem;
+
+            .data-text-top {
+                text-align: left;
+
+                .name {
+                    font-size: 2.2rem;
+                }
+            }
+
+            .data-text-mid {
+                text-align: left;
+            }
+        }
+
+        .map {
+            width: 60%;
+        }
+    }
+
+}

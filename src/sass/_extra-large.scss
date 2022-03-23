@@ -1,0 +1,127 @@
+@media(min-width:1200px) {
+
+    .section-title {
+        font-size: 3.2rem;
+    }
+
+    .nav-desktop {
+        &__menu {
+
+            .menu-link {
+                padding: 0 1em;
+                font-size: 1.7rem;
+
+                &__logo {
+                    padding-right: 2em;
+                }
+            }
+        }
+
+        &__box {
+
+            .number {
+                font-size: 1.6rem;
+            }
+
+            .text {
+                font-size: 1.4rem;
+            }
+
+            i {
+                padding-left: .5em;
+                font-size: 2.6rem;
+                color: $mainColor;
+            }
+        }
+    }
+
+    .header-img {
+        &__text {
+
+            .text-top {
+                font-size: 3rem;
+            }
+
+            .text-bottom {
+                font-size: 7.4rem;
+            }
+
+            .btn-check-deadlines {
+                font-size: 1.6rem;
+            }
+        }
+    }
+
+
+    .packages {
+
+        .our-strengths {
+            justify-content: space-between;
+            align-items: flex-start;
+
+            .box {
+                width: 30%;
+            }
+
+            .one {
+                width: 30%;
+            }
+
+            .section-title {
+                padding: 0;
+            }
+        }
+
+        .box-img {
+            width: 100%;
+        }
+    }
+
+    .menu {
+        .box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            width: 100%;
+            padding: 5em 0;
+        }
+
+        .section-title {
+
+            &::before {
+                width: 30%;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+
+        &__box-img {
+            width: 60%;
+        }
+
+        &__box-description {
+            padding-left: 3em;
+            width: 35%;
+
+
+            .menu-type {
+                font-size: 1.6rem;
+            }
+
+            .menu-dish {
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+    .gallery {
+
+        .box-gallery {
+
+            .gallery-img {
+                width: 20%;
+            }
+        }
+    }
+}
