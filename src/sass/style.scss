@@ -138,10 +138,7 @@ body {
 
 
     &__menu {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        @include dflex-column-jcc-aic;
         position: fixed;
         top: 0;
         left: 0;
@@ -193,10 +190,7 @@ body {
     left: 0;
     width: 100%;
     height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include dflex-column-jcc-aic;
     background-image: url(../img/header.jpg);
     background-position: center;
     background-size: cover;
@@ -205,10 +199,7 @@ body {
     z-index: 0;
 
     .wrapper {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        @include dflex-column-jcc-aic;
     }
 
 
@@ -250,25 +241,35 @@ body {
         position: absolute;
         right: 0;
         bottom: 0;
+        z-index: 100;
 
         .box {
+
             a {
-                display: flex;
-                justify-content: center;
-                align-items: center;
+                position: fixed;
+                right: 0;
+                @include dflex-jcc-aic;
                 width: 45px;
                 height: 45px;
-                margin: .5em;
                 font-size: 2.2rem;
                 text-decoration: none;
                 color: #fff;
                 background-color: $mainColor;
-                border-radius: 50%;
+                border-top-left-radius: 10px;
+                border-bottom-left-radius: 10px;
                 transition: background-color .2s linear;
 
                 &:hover {
                     background-color: $mainColorDark;
                 }
+            }
+
+            .fb {
+                top: 110px;
+            }
+
+            .ig {
+                top: 170px;
             }
         }
     }
@@ -281,9 +282,7 @@ body {
 // =====================
 
 .about-the-room {
-    display: flex;
-    justify-content: center;
-    align-content: center;
+    @include dflex-jcc-aic;
 
     .container {
         padding: 2em;
@@ -359,10 +358,7 @@ body {
     }
 
     .our-packages {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        @include dflex-column-jcc-aic;
 
         .section-title {
             padding-left: 3em;
@@ -383,10 +379,7 @@ body {
 
 
             .body {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
+                @include dflex-column-jcc-aic;
 
                 .icon {
                     padding-bottom: .5em;
@@ -435,10 +428,7 @@ body {
             }
 
             .buttons {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
+                @include dflex-column-jcc-aic;
 
                 .btn-see-menu,
                 .btn-reserve {
@@ -479,10 +469,7 @@ body {
     }
 
     .gift {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        @include dflex-column-jcc-aic;
         padding: 5em 2em;
 
         .img-gift {
@@ -517,9 +504,7 @@ body {
 
     &__box-img {
         margin: 4em 0em;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include dflex-jcc-aic;
         flex-wrap: wrap;
         width: 100%;
 
@@ -591,19 +576,14 @@ body {
     }
 
     .carousel {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include dflex-jcc-aic;
         margin: 5em auto;
         width: 95%;
     }
 
     .carousel-item {
         position: relative;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        @include dflex-column-jcc-aic;
         margin: 0 auto;
         height: 250px;
         border: 2px solid #000;
@@ -714,6 +694,7 @@ body {
     }
 
     .accordion-box {
+        position: relative;
         padding: 1em 0;
 
         .accordion-btn {
@@ -726,6 +707,7 @@ body {
             border: none;
             border-bottom: 1px solid #ddd;
             cursor: pointer;
+            transition: .4s;
 
             &:hover {
                 color: $mainColorDark;
@@ -750,7 +732,6 @@ body {
         }
 
         .accordion-body {
-            position: relative;
             display: none;
             padding: .5em 0;
             font-size: 1.4rem;
@@ -786,9 +767,7 @@ body {
 // =====================
 
 .gallery {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include dflex-jcc-aic;
     padding: 1em 0;
 
     .box-gallery {
@@ -815,10 +794,7 @@ body {
     }
 
     .popup {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-content: center;
+        @include dflex-column-jcc-aic;
         flex-wrap: wrap;
         position: fixed;
         top: 0;
@@ -932,10 +908,7 @@ body {
     }
 
     .box-item {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        @include dflex-column-jcc-aic;
         padding: 3em 0;
         font-family: 'Lora', serif;
 
@@ -969,10 +942,7 @@ body {
     }
 
     .data {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        @include dflex-column-jcc-aic;
         font-size: 1.4rem;
         font-family: 'Lora', serif;
 
@@ -1043,15 +1013,13 @@ body {
         }
 
         .form {
-            display: flex;
-            flex-direction: column;
+            @include dflex-column;
             width: 100%;
             padding: 4em 0;
         }
 
         .form-name-email {
-            display: flex;
-            flex-direction: column;
+            @include dflex-column;
             width: 100%;
 
 

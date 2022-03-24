@@ -1,0 +1,23 @@
+@mixin dflex-column-jcc-aic {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+// @include dflex-column-jcc-aic;
+
+@mixin dflex-jcc-aic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// @include dflex-jcc-aic;
+
+@mixin dflex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+// @include dflex-column;

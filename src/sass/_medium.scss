@@ -117,9 +117,7 @@
             }
 
             .cards {
-                display: flex;
-                justify-content: center;
-                align-items: center;
+                @include dflex-jcc-aic;
                 flex-wrap: wrap;
                 width: 100%;
             }
@@ -257,9 +255,7 @@
         }
 
         .box {
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            @include dflex-jcc-aic;
         }
 
         .box-item {

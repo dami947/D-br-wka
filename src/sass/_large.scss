@@ -42,9 +42,7 @@
         font-family: 'Lora', serif;
 
         &__menu {
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            @include dflex-jcc-aic;
 
             .menu-link {
                 position: relative;
@@ -83,9 +81,7 @@
         }
 
         &__box {
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            @include dflex-jcc-aic;
             padding-right: 1em;
 
             .number {
@@ -141,10 +137,17 @@
 
             .box {
                 a {
-                    width: 50px;
-                    height: 50px;
-                    margin: .5em;
+                    width: 60px;
+                    height: 60px;
                     font-size: 2.6rem;
+                }
+
+                .fb {
+                    top: 170px;
+                }
+
+                .ig {
+                    top: 240px;
                 }
             }
         }
@@ -172,10 +175,7 @@
         .our-packages {
 
             .cards {
-                display: flex;
                 justify-content: space-between;
-                align-items: center;
-                flex-wrap: wrap;
             }
 
             .card {
@@ -280,9 +280,7 @@
         }
 
         .data-map {
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            @include dflex-jcc-aic;
             padding: 0em 2em;
             width: 100%;
         }
