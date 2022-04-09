@@ -5,6 +5,7 @@ const POPUP_IMG = document.querySelector(".popup-img");
 const ARROW_LEFT = document.querySelector(".popup-arrow--left");
 const ARROW_RIGHT = document.querySelector(".popup-arrow--right");
 
+
 let currentImgIndex;
 
 const showNextImg = () => {

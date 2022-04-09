@@ -234,6 +234,11 @@ body {
             &:hover {
                 background-color: $mainColorDark;
             }
+
+            a {
+                text-decoration: none;
+                color: #fff;
+            }
         }
     }
 
@@ -440,6 +445,7 @@ body {
                     text-align: center;
                     text-decoration: none;
                     border-radius: 30px;
+                    cursor: pointer;
                 }
 
                 .btn-see-menu {
@@ -556,14 +562,63 @@ body {
             background-color: #fff;
             border: 2px solid #000;
             border-radius: 30px;
-            transition: background-color .2s linear, color .2s linear;
+            transition: background-color .2s linear;
             cursor: pointer;
 
+            a {
+                text-decoration: none;
+                color: #000;
+                transition: color .2s linear;
+            }
+
             &:hover {
-                color: #fff;
                 background-color: #000;
             }
+
+            &:hover a {
+                color: #fff;
+            }
         }
+    }
+
+    .popup-packages {
+        @include dflex-column-jcc-aic;
+        flex-wrap: wrap;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100vw;
+        background: rgba(0, 0, 0, 0.5);
+        backdrop-filter: blur(10px);
+        animation: fadeIn 0.3s;
+        z-index: 100;
+        cursor: pointer;
+
+        .popup-packages-menu {
+            padding: 0 4em;
+            background-color: #fff;
+            overflow: auto;
+
+            .menu-type {
+                font-size: 1.8rem;
+                font-weight: bold;
+            }
+
+            .menu-dish {
+                font-size: 1.6rem;
+                font-weight: normal;
+            }
+
+            .drinks {
+                font-size: 1.4rem;
+                color: #333;
+            }
+        }
+    }
+
+    .popup-packages.hidden {
+        display: none;
     }
 }
 

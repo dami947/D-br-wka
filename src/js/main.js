@@ -4,6 +4,12 @@ const navAllLink = document.querySelectorAll('.menu-link');
 const accordion = document.querySelector('.accordion');
 const accordionBtns = document.querySelectorAll('.accordion-btn');
 const footerYear = document.querySelector('.footer-year');
+const btnMenu = document.querySelectorAll('.btn-see-menu');
+const popupPackages = document.querySelector('.popup-packages');
+const name = document.querySelector('#name');
+const email = document.querySelector('#email');
+const textarea = document.querySelector('.textarea');
+const btnForm = document.querySelector('.btn-form')
 
 
 const handleNav = () => {
@@ -48,13 +54,34 @@ const clickOutsideAccordion = e => {
     closeAccordionItem();
 }
 
+
+
+const showPopup = e => {
+    popupPackages.classList.remove('hidden')
+    document.body.classList.add('sticky-body')
+}
+
+
+const closePopup = () => {
+    popupPackages.classList.add('hidden')
+    document.body.classList.remove('sticky-body')
+}
+
+
 const handleCurrentYear = () => {
     const year = (new Date).getFullYear();
     footerYear.innerText = year;
 }
 handleCurrentYear();
 
-
+btnMenu.forEach(btn => {
+    btn.addEventListener('click', showPopup)
+})
+popupPackages.addEventListener("click", e => {
+    if (e.target === popupPackages || document.querySelector('.popup-packages-menu')) {
+        closePopup();
+    }
+});
 navBtn.addEventListener('click', handleNav);
 accordionBtns.forEach(btn => btn.addEventListener('click', openAccordionitems));
 window.addEventListener('click', clickOutsideAccordion);
