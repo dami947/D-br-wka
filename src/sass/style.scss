@@ -300,6 +300,11 @@ body {
             object-fit: cover;
             width: 100%;
         }
+
+        .box-img-double {
+            object-fit: cover;
+            width: 100%;
+        }
     }
 
 
@@ -628,6 +633,7 @@ body {
 
     .section-title {
         text-align: center;
+        margin-bottom: 2em
     }
 
     .carousel {
@@ -641,6 +647,7 @@ body {
         @include dflex-column-jcc-aic;
         margin: 0 auto;
         height: 250px;
+        width: 75%;
         border: 2px solid #000;
         overflow: hidden;
 
@@ -663,6 +670,10 @@ body {
             color: $mainColor;
         }
 
+    }
+
+    .splide__arrow {
+        background-color: $mainColor;
     }
 
     .btn-next,
@@ -708,19 +719,20 @@ body {
         }
 
         .text-bottom {
+            margin-bottom: .5em;
             font-size: 5rem;
             font-weight: normal;
             color: #333;
         }
 
         .btn-check-deadlines {
-            margin-top: 2em;
-            padding: 1em 3em;
+            padding: 1em;
             font-size: 1.4rem;
             font-weight: bold;
             letter-spacing: 1px;
             color: #fff;
             background-color: $mainColor;
+            text-decoration: none;
             border: none;
             border-radius: 30px;
             cursor: pointer;

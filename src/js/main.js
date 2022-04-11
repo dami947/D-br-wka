@@ -9,7 +9,7 @@ const popupPackages = document.querySelector('.popup-packages');
 const name = document.querySelector('#name');
 const email = document.querySelector('#email');
 const textarea = document.querySelector('.textarea');
-const btnForm = document.querySelector('.btn-form')
+const btnForm = document.querySelector('.btn-form');
 
 
 const handleNav = () => {
@@ -67,13 +67,6 @@ const closePopup = () => {
     document.body.classList.remove('sticky-body')
 }
 
-
-const handleCurrentYear = () => {
-    const year = (new Date).getFullYear();
-    footerYear.innerText = year;
-}
-handleCurrentYear();
-
 btnMenu.forEach(btn => {
     btn.addEventListener('click', showPopup)
 })
@@ -82,6 +75,14 @@ popupPackages.addEventListener("click", e => {
         closePopup();
     }
 });
+
+const handleCurrentYear = () => {
+    const year = (new Date).getFullYear();
+    footerYear.innerText = year;
+}
+handleCurrentYear();
+
+
 navBtn.addEventListener('click', handleNav);
 accordionBtns.forEach(btn => btn.addEventListener('click', openAccordionitems));
 window.addEventListener('click', clickOutsideAccordion);
