@@ -8,7 +8,10 @@ Single page of the hotel "Dabrowka" dedicated to the organization of weddings in
 
 ## Tech Stack
 
-HTML, SASS, JavaScript, Gulp
+* **HTML**
+* **SCSS**
+* **JavaScript**
+* **Gulp**
 
 
 
